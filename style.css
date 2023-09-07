@@ -19,8 +19,7 @@ main {
 }
 
 .card {
-  width: 300px;
-  max-width: 400px;
+  width: 400px;
   background-color: #fff;
   border: 1px solid #bbb;
   border-radius: 10px;
@@ -82,4 +81,26 @@ a[data-testid="githubURL"]:hover {
   width: 90%;
   justify-content: space-between;
   margin-bottom: 20px;
+}
+
+
+/* media query for phones */
+
+@media (max-width: 600px) {
+  .card {
+    width: 300px;
+  }
+  .slackProfile img {
+    width: 150px;
+    height: 150px;
+  }
+  p[data-testid="slackUserName"] {
+    font-size: 1rem;
+  }
+  p[data-testid="myTrack"] {
+    font-size: 0.8rem;
+  }
+  a[data-testid="githubURL"] {
+    font-size: 0.8rem;
+  }
 }
