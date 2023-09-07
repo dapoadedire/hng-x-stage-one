@@ -1,0 +1,85 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto Mono", monospace;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  padding: 2rem;
+  background-color: #f5f5f5;
+  
+}
+
+.card {
+  width: 300px;
+  max-width: 400px;
+  background-color: #fff;
+  border: 1px solid #bbb;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem ;
+  gap: 1rem;
+}
+
+.slackProfile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 0px;
+}
+
+p[data-testid="slackUserName"] {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+p[data-testid="myTrack"] {
+  font-size: 1rem;
+  margin-bottom: 8px;
+  border-radius: 4px;
+  padding: 5px;
+  background-color: #fff;
+}
+
+a[data-testid="githubURL"] {
+  text-decoration: none;
+  color: #000;
+  font-size: 1rem;
+  border: 1px solid grey;
+  border-radius: 4px;
+  padding: 5px;
+  background-color: #fff;
+}
+
+a[data-testid="githubURL"]:hover {
+  background-color: #000;
+  color: #fff;
+}
+
+.slackProfile img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+}
+
+.currentDayAndTime {
+  display: flex;
+  width: 90%;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}

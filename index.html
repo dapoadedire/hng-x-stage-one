@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- 
+Requirements:
+
+Slack Name:
+ Display your Slack name prominently.
+ Attribute: data-testid="slackUserName"
+Slack Display Picture:
+ Showcase your Slack profile picture.
+ The image's alt attribute should be your Slack username.
+ Attribute: data-testid="slackDisplayImage"
+Current Day of the Week:
+ Indicate the current day of the week (e.g., Monday, Tuesday).
+ Attribute: data-testid="currentDayOfTheWeek"
+Current UTC Time:
+ Display the current UTC time in milliseconds.
+ Attribute: data-testid="currentUTCTime"
+Track:
+ Mention your track (e.g Frontend).
+ Attribute: data-testid="myTrack"
+GitHub URL:
+ Provide a clickable link to your GitHub repository where the source code for this task resides.
+ Attribute: data-testid=“githubURL” -->
+
+    <main>
+      <div class="card">
+        <div class="slackProfile">
+          <img
+            src="https://ca.slack-edge.com/T05FFAA91JP-U05RABQ4RR9-142d735699f5-512"
+            alt="My Slack Display Picture"
+            data-testid="slackDisplayImage"
+          />
+          <p data-testid="slackUserName">Dapo Adedire</p>
+          <p data-testid="myTrack">Frontend Development</p>
+        </div>
+
+        <div class="currentDayAndTime">
+          <p data-testid="currentDayOfTheWeek"></p>
+
+          <p data-testid="currentUTCTime"></p>
+        </div>
+
+        <a
+          href="https://github.com/dapoadedire/hng-x-stage-one"
+          data-testid="githubURL"
+          target="_blank"
+          >GitHub URL</a
+        >
+      </div>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
